@@ -4,20 +4,54 @@ layout: default
 
 <div class="home">
 
+  <h1 class="page-heading">About</h1>
+
+  <div class="about-content">
+    <p>
+      Hello!
+    </p>
+    <p>
+      There are many facts etc..
+    </p>
+  </div>
+
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <h1 class="page-heading">Writeups</h1>
 
+  <ul class="writeup-list">
+
+  </ul>
+  <h1 class="page-heading">Projects</h1>
+
+  <ul class="project-list">
+    <li>
+      <a href="https://github.com/jinmel/pintos-mac">pintos-mac</a>
+      <br>
+      <span class="description">A Macintosh version of Pintos education operating system
+        written by standford. <br>
+        Yet still under development.</span>
+    </li>
+    <li>
+      <a href="https://github.com/jinmel/PostechMarble">PostechMarble</a>
+      <br>
+      <span class="description">
+        A computer game modeled after the Monopoly written in C++ and Qt5.1 Framework. <br>
+        Built with self written game engine.
+      </span>
+    </li>
+  </ul>
 </div>
