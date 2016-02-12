@@ -6,7 +6,7 @@ layout: default
 
   <h1 class="page-heading">About</h1>
 
-  <div class="about-content">
+  <section class="page-content">
     <p>
       Hello!
     </p>
@@ -14,52 +14,65 @@ layout: default
       I am Jin Suk Park, I am a web application developer primarily interested in backend systems.
       I also regularly compete in CTFs.
     </p>
-  </div>
+  </section>
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      </li>
-    {% endfor %}
-  </ul>
+  <section class="page-content">
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
   <h1 class="page-heading">Writeups</h1>
 
-  <ul class="writeup-list">
+  <section class="page-content">
+    <ul class="writeup-list">
+    </ul>
+  </section>
 
-  </ul>
   <h1 class="page-heading">Projects</h1>
-
-  <ul class="project-list">
-    <li>
-      <a href="https://github.com/jinmel/pintos_mac">pintos_mac</a>
-      <br>
-      <span class="description">A Macintosh version of Pintos educational operating system
-        written by standford. <br>
-        Yet still under development.</span>
-    </li>
-    <li>
-      <a href="https://github.com/jinmel/PostechMarble">PostechMarble</a>
-      <br>
-      <span class="description">
-        A computer game modeled after the Monopoly written in C++ and Qt5.1 Framework. <br>
-        Built with self written game engine.
-      </span>
-    </li>
-    <li>
-      <a href="https://github.com/jinmel/simplescalar_fmt">FMT Implementation for simplescalar CPU</a>
-      <br>
-      <span class="description">
-        Frontend Miss Table implemented on simplescalar CPU simulator.
-      </span>
-    </li>
-  </ul>
+  <section class="page-content">
+    <ul class="project-list">
+      <li>
+        <p>
+          <a href="https://github.com/jinmel/pintos_mac">pintos_mac</a>
+        </p>
+        <p>
+          <span class="description">A Macintosh version of Pintos educational operating system
+            written by standford. <br>
+            Yet still under development.</span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/jinmel/PostechMarble">PostechMarble</a>
+        </p>
+        <p>
+          <span class="description">
+            A computer game modeled after the Monopoly written in C++ and Qt5.1 Framework. <br>
+            Built with self written game engine.
+          </span>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/jinmel/simplescalar_fmt">
+            FMT Implementation for simplescalar CPU</a>
+        </p>
+        <p>
+          <span class="description">
+            Frontend Miss Table implemented on simplescalar CPU simulator.
+          </span>
+        </p>
+      </li>
+    </ul>
+  </section>
 </div>
