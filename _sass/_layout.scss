@@ -181,6 +181,9 @@
   font-weight: 400;
   font-size: 20px;
   margin-bottom: 20px;
+  a {
+    color: $text-color;
+  }
 }
 
 .post-list {
