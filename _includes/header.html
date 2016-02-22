@@ -2,10 +2,14 @@
   <div class="wrapper">
     <nav class="site-nav">
       <ul>
-        <li><a class="page-link" href="#about">About</a></li>
-        <li><a class="page-link" href="#posts">Posts</a></li>
-        <li><a class="page-link" href="#writeups">Writeups</a></li>
-        <li><a class="page-link" href="#projects">Projects</a></li>
+        <li><a class="page-link" href="{{site.url | append: "#about"}}">About</a></li>
+        <li><a class="page-link" href="{{site.url | append: "#posts"}}">Posts</a></li>
+        <li>
+          <a class="page-link" href="{{site.url | append: "#writeups"}}">Writeups</a>
+        </li>
+        <li>
+          <a class="page-link" href="{{site.url | append: "#projects"}}">Projects</a>
+        </li>
       </ul>
     </nav>
   </div>

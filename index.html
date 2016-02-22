@@ -11,7 +11,7 @@ layout: default
       Hello!
     </p>
     <p>
-      I am Jin Suk Park, I am a web application developer primarily interested in backend systems.
+      I am Jin Suk Park. I love building web apps and contributing on open source softwares.
       I also regularly compete in CTFs.
     </p>
   </section>
@@ -20,7 +20,7 @@ layout: default
 
   <section class="page-content">
     <ul class="post-list">
-      {% for post in site.posts %}
+      {% for post in site.categories.posts %}
         <li>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -34,7 +34,15 @@ layout: default
   <h1 class="page-heading"><a href="#writeups">Writeups</a></h1>
 
   <section class="page-content">
-    <ul class="writeup-list">
+    <ul class="post-list">
+      {% for post in site.categories.writeups %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {% endfor %}
     </ul>
   </section>
 
