@@ -1,0 +1,109 @@
+body {
+  .container {
+    margin-top: 25px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .header {
+      padding: 40px 0 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .title {
+        font-size: 3.1em;
+        letter-spacing: 2px;
+      }
+
+      nav {
+        margin-left: 120px;
+        ul {
+          display: flex;
+          li {
+            margin: 0 10px;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    .rule {
+      width: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+
+    a.external-link {
+      color: #4183c4;
+      text-decoration: none;
+    }
+
+    .contents {
+      margin-top: 20px;
+
+      div.content-item {
+        margin: 70px 0;
+
+        table {
+          margin-top: 30px;
+          margin-bottom: 10px;
+          border-collapse: collapse;
+          border-style: hidden;
+
+          tbody {
+            display: table-row-group;
+            vertical-align: middle;
+          }
+
+          .col-head, .col-body {
+            text-align: left;
+            padding-right: 20px;
+          }
+
+          .col-head {
+            font-weight: bold;
+          }
+
+          th, td {
+            border: 1px solid #ccc;
+            padding: 4px 10px;
+          }
+        }
+
+
+        h2 {
+          font-size: 1.7em;
+          margin-bottom: 35px;
+        }
+
+        h3 {
+          font-size: 1.3em;
+          margin: 1em;
+        }
+
+        p {
+          margin-left: 40px;
+          margin-top: 0.7em;
+          margin-bottom: 0.7em;
+        }
+
+        table {
+          margin-left: 2em;
+        }
+      }
+    }
+  }
+}
